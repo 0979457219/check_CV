@@ -130,7 +130,8 @@ body {
 }
 
 
-.ti-angle-double-left {
+.ti-angle-double-left,
+.ti-angle-left {
     font-size: 25px;
 }
 
@@ -144,11 +145,28 @@ body {
     
 }
 
+.modal-double-close{
+    position: absolute;
+    top: 0;
+    left: 57px;
+    padding: 16px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
 .modal-close:hover {
-    background-color: #add8e6;
+    background-color: #9fc9f0;
     color: black;
     border-top-left-radius: 10px;
 }
+
+.modal-double-close:hover {
+    background-color: #9fc9f0;
+    color: black;
+    
+}
+
+
 
 .desc {
     line-height: 60px;
@@ -167,7 +185,9 @@ body {
 
 .slider-msv,
 .slider-name,
-.slider-date {
+.slider-date,
+.slider-classname,
+.slider-major {
     padding: 6px 0;
     font-size: 18px;
 }
@@ -195,8 +215,8 @@ body {
     height: 16px;
 }
 
-.btn_contact {
-    margin: 0 30px;
+.btn_contact_fp {
+    
     
     background: rgb(4 2 36);
     color: white;
@@ -210,14 +230,146 @@ body {
     height: 40px;
     position: relative;
     transform: translateY(-4px);
+
+    
 }
 
-.btn_contact:hover {
+.btn_contact_fp:hover {
     transform: translateY(-5px);
     box-shadow: 0px 3px 5px 0px black;
 }
 
 
+.btn_contact_more {
+    margin: 0 30px;
+    
+    background: rgb(4 2 36);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(40, 37, 86);
+   
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    width: 140px;
+    height: 40px;
+    position: relative;
+    transform: translateY(-4px);
+}
+
+.btn_contact_more:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 5px 0px black;
+}
+
+
+
+.contact-page {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* display: none; */
+    /* animation: modalfadein ease 0.3s; */
+}
+
+.contact-container {
+   
+        background-color: #fff;
+        width: 1500px;
+        min-height: 200px;
+        position: relative;
+        max-width: 70%;
+        box-shadow: 2px 2px 10px black;
+        border-radius: 10px;
+
+        animation: modalfadein ease 0.3s;
+   
+}
+
+.contact-header {
+    width: 100%;
+    background-color: rgb(4 2 36);
+    height: 59px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.contact-slider {
+    min-height: 480px;
+    padding: 32px 8px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.contact-item {
+    width: 33.33%;
+    padding: 20px;
+    float: left;
+    
+}
+
+.contact-img {
+    width: 150px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 10px black;
+    margin-bottom: 16px;
+}
+
+.contact-name {
+    font-size: 16px;
+    margin: 8px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+    
+.contact-chucvu {
+    font-size: 16px;
+    margin: 8px;
+    color: rgb(74, 74, 74);
+}
+
+.contact-zalo img,
+.contact-dt img {
+    width: 22px;
+    margin: 0 6px;
+}
+
+.contact-fb,
+.contact-mail {
+    padding: 2px;
+    margin: 2px;
+    text-decoration: none;
+    color: #000;
+}
+
+.ti-facebook,
+.ti-email {
+    font-size: 22px;
+}
+
+.contact-hotline {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.contact-email {
+    font-size: 14px;
+    margin-top: 6px;    
+}
+
+.lui {
+    transform: translateY(30px);
+}
 
 
 
